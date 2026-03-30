@@ -22,30 +22,34 @@ export function Layout() {
         </div>
 
         <nav className="nav">
-          <NavLink className="nav-link" to="/" end>
+          <NavLink className="nav-link" to="/app" end>
             Dashboard
           </NavLink>
-          <NavLink className="nav-link" to="/submissions">
+          <NavLink className="nav-link" to="/app/submissions">
             Submissions
           </NavLink>
-          <NavLink className="nav-link" to="/validation">
+          <NavLink className="nav-link" to="/app/validation">
             Validation
           </NavLink>
-          <NavLink className="nav-link" to="/approvals">
+          <NavLink className="nav-link" to="/app/approvals">
             Approvals
           </NavLink>
-          <NavLink className="nav-link" to="/publish">
+          <NavLink className="nav-link" to="/app/publish">
             Publish
           </NavLink>
-          <NavLink className="nav-link" to="/audit">
+          <NavLink className="nav-link" to="/app/audit">
             Audit
           </NavLink>
-          <NavLink className="nav-link" to="/evidence">
+          <NavLink className="nav-link" to="/app/evidence">
             Evidence
           </NavLink>
-          <NavLink className="nav-link" to="/settings">
+          <NavLink className="nav-link" to="/app/settings">
             Settings
           </NavLink>
+
+          <a className="nav-link" href="/">
+            Back to landing
+          </a>
         </nav>
 
         <div className="sidebar-footer">

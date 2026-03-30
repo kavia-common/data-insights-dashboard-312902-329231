@@ -9,6 +9,7 @@ export function RequireAuth({ children }) {
   const location = useLocation();
 
   if (!isAuthenticated) {
+    // Redirect to the public landing page; auth UI is integrated into the landing flow.
     return <Navigate to="/login" replace state={{ from: location.pathname }} />;
   }
   return children;
